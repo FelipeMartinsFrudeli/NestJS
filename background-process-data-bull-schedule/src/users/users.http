@@ -1,0 +1,27 @@
+POST http://localhost:3000/users/seed
+
+###
+POST http://localhost:3000/users/process
+
+###
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/1
+
+###
+POST http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+
+}
+###
+PATCH http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+
+}
+###
+DELETE http://localhost:3000/users/1

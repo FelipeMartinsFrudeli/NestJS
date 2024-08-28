@@ -1,0 +1,36 @@
+
+GET http://localhost:3000/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiamhvbkBkb2UuY29tIiwibmFtZSI6IlBhdWxvIFNhbHZhdG9yZSIsImlhdCI6MTcyNDc4ODU0OCwiZXhwIjoxNzI3MzgwNTQ4fQ.eT7qVsbGO9TaLQ0eXGN4sZSMpbAcj2mx1kUunyKq_Ms
+
+###
+GET http://localhost:3000/user
+
+###
+GET http://localhost:3000/user/1
+
+###
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+  "email": "jhon@doe.com",
+  "password": "Abc@123",
+  "name": "Paulo Salvatore"
+}
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "jhon@doe.com",
+  "password": "Abc@123"
+}
+###
+PATCH http://localhost:3000/user/1
+Content-Type: application/json
+
+{
+
+}
+###
+DELETE http://localhost:3000/user/1
